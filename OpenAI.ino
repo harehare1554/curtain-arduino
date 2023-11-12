@@ -12,7 +12,7 @@
 
 const char* ssid = "SSID";
 const char* password = "PASSWORD";
-const char* serverUrl = "Json URL"; //openとcloseにhh:mm形式でデータが入っていること。
+const char* serverUrl = "Json URL"; //リンク先のJsonファイルのopenとcloseにhh:mm形式で時間のデータが入っていること。
 const char* openTime;
 const char* closeTime;
 
@@ -20,7 +20,7 @@ bool flag = false;
 const char* opentimez;
 
 WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, ntpServer, tzOffset, 43200000); //NTP設定
+NTPClient timeClient(ntpUDP, ntpServer, tzOffset, 43200000);
 
 void setup() {
 
